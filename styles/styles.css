@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Anek Malayalam", sans-serif;
+}
+
+/*Estilos del header*/
+header {
+  background-color: #85586f;
+  padding: 20px;
+}
+
+header .barraNavPrimera {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+header .barraNavPrimera .options {
+  text-align: right;
+}
+
+header .barraNavPrimera .options a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+header .logoImagen {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+  vertical-align: middle;
+}
+
+header .loloImagen img {
+  width: 100%;
+  height: 100%;
+}
+
+header .barraNav {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #ac7d88;
+  width: calc(100%-104px);
+  height: 100px;
+  vertical-align: middle;
+}
+
+header .barraNav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header .barraNav ul li {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 38px 20px;
+}
+
+header .barraNav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #f0d9ff;
+}
+
+.options {
+  font-size: 20px;
+}
+
+.container-fluid {
+  font-size: 25px;
+}
+
+/*Estilos del main*/
+main {
+  background-color: #ac7d88;
+  /*Esto lo uso como variable*/
+  padding-top: 16px;
+}
+
+main .banner {
+  width: 100%;
+  height: 300px;
+}
+
+main .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner img {
+  height: 395px;
+}
+
+.container {
+  text-align: center;
+}
+
+.centrarMain {
+  min-height: calc(100vh-309px);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.centrarMain h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.centrarMain img:hover {
+  transform: scale(1.5);
+}
+
+.grillaPrincipal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.grillaPrincipal img {
+  place-self: center;
+  object-fit: cover;
+}
+.grillaPrincipal img:hover {
+  transform: scale(1.5);
+}
+
+.seccionColeccionesIndex {
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.seccionColeccionesIndex h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/*Estilos del footer*/
+footer .redes {
+  background-color: #f0d9ff;
+  padding: 25px;
+}
+
+footer .icon {
+  width: 48px;
+  height: 48px;
+}
+
+footer .redes.p {
+  padding-top: 25px;
+}
+
+/*Media queries */
+@media screen and (max-width: 1024px) {
+  .grillaPrincipal {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .barraNav ul li {
+    display: block;
+  }
+  .seccionColeccionesIndex h1 {
+    font-size: 1.5rem;
+  }
+  .banner {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .welcome {
+    grid-template-columns: 1fr;
+  }
+  .barraNavPrimera a {
+    display: block;
+  }
+  .redes {
+    display: block;
+  }
+}

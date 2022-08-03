@@ -1,0 +1,14 @@
+/*Estilos del footer*/
+footer{
+    .redes{
+        background-color: $footerColor;
+        padding: 25px;
+    }
+    .icon{
+        width: 48px;
+        height: 48px;
+    }
+    .redes.p{
+        padding-top: 25px;
+    }
+}

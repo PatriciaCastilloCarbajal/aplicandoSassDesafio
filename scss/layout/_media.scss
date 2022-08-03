@@ -1,0 +1,26 @@
+/*Media queries */
+@media screen and (max-width: 1024px) {
+    .grillaPrincipal {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+    .barraNav ul li {
+    display: block;
+    }
+    .seccionColeccionesIndex h1 {
+    font-size: 1.5rem;
+    }
+    .banner {
+    grid-template-columns: 1fr;
+    align-items: center;
+    }
+    .welcome {
+    grid-template-columns: 1fr;
+    }
+    .barraNavPrimera a {
+    display: block;
+    }
+    .redes {
+    display: block;
+    }
+}
